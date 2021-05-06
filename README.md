@@ -1,14 +1,10 @@
 # Used technology :
 
-1. node JS
-2. mongo lite (neDB) because mongo DB online is not available for me (don't have account)
-3. indexing mongo lite
-4. node-cache will update to node-cache each time on add,update,delete case because redis online is not available.<br>
-   (don't have account).
-5. jsonwebtoken
-6. Postman
-7. Auth token auto generate 
-8. bearer token Authorization
+1. node JS.<br>
+2. React JS.<br>
+3. Express.<br>
+4. Mocha.<br>
+5. Chai.<br>
 
 # Instalation and running server locally :
 1. Use command prompt and direct to root folder and type :</br>
@@ -37,3 +33,9 @@
    Click Edit Data Button for updating the data.</br>
    If mistaken then there will be notification</br>   
 4. Delete button is supposed to be working but the API delete https://simple-contact-crud.herokuapp.com/contact/{id} is error.</br>
+
+# Testing locally (Using Mocha and Chai):
+1. Close port 3000 if used.</br>
+2. Use command prompt and direct to root folder and type :</br>
+   $ npm test or $ mocha tests</br>
+   For view the test module, see folder tests./
