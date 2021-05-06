@@ -24,7 +24,8 @@
 5. Delete button is supposed to be working but the API delete https://simple-contact-crud.herokuapp.com/contact/{id} is error.</br>
    
 # Running server online (https://michaeldennism.herokuapp.com or michaeldennism.herokuapp.com) :
-1. Open https://michaeldennism.herokuapp.com or michaeldennism.herokuapp.com on browser (Mozilla suggested)</br>
+1. Input https://michaeldennism.herokuapp.com or michaeldennism.herokuapp.com on browser (Mozilla suggested)</br>
+   Press Enter to load the browser</br> 
 2. Input First Name, Last Name, Age, Photo Link.</br>
    Click Add Data Button for adding the data.</br>
    If mistaken then there will be notification.</br>
