@@ -2,6 +2,7 @@
 
 1. node JS.<br>
 2. React JS.<br>
+3. HTML.<br>
 3. Express.<br>
 4. Mocha.<br>
 5. Chai.<br>
