@@ -39,7 +39,11 @@ class MyMain extends React.Component {
 	 hideshowAlert:{
 		display:"none"
 	},
-	alert:''
+	hideshowGoodAlert:{
+		display:"none"
+	},
+	alert:'',
+	goodalert:''
 	};
  	this.submitData = this.submitData.bind(this);
 	this.getDetail = this.getDetail.bind(this);
@@ -160,6 +164,23 @@ class MyMain extends React.Component {
     return /\s/g.test(s);
   }
   
+  showSuccess(message) {
+	this.setState({
+             goodalert: message,
+			 hideshowGoodAlert:{
+				display:"block"
+			},
+		  });  
+		  setInterval(() => { 
+        this.setState({
+             goodalert: "",
+			 hideshowGoodAlert:{
+				display:"none"
+			},
+		  }); 
+    }, 2000);
+  }
+  
   validURL(str) {
    var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
     '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
@@ -257,6 +278,10 @@ class MyMain extends React.Component {
 				}).then(res => res.json())
 			  .then(
 				(result) => {
+					if(cekId)
+						this.showSuccess('Update Data Succeed');
+					else
+						this.showSuccess('Add Data Succeed');
 				  this.componentDidMount();
 	});	
 	
@@ -283,9 +308,14 @@ class MyMain extends React.Component {
 </nav>
   <div>
      <form className="row g-3" onSubmit={this.submitData} >
-	 <h2><span className="badge bg-secondary mt-3">Form Contact</span></h2>
+	 <h2><span className="badge bg-secondary mt-3"><svg width="22" height="22" fill="currentColor" className="bi bi-person-lines-fill" viewBox="0 0 16 16">
+  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+</svg> Form Contact</span></h2>
 	 <div className="alert alert-danger" style={this.state.hideshowAlert} role="alert">
 	     {this.state.alert}
+	</div>
+	<div className="alert alert-success" style={this.state.hideshowGoodAlert} role="alert">
+	     {this.state.goodalert}
 	</div>
 	 <div className="col-md-4">
     <label htmlFor="inputSearch" className="form-label">First Name</label>
@@ -307,7 +337,10 @@ class MyMain extends React.Component {
   </div>  
   </div> 
   <div className="col-md-2">
-    <button type="submit" className="form-control btn btn-primary mb-4 ">{this.state.btnVal}</button>
+    <button type="submit" className="form-control btn btn-primary mb-4 "><svg width="16" height="16" fill="currentColor" className="bi bi-person-check-fill" viewBox="0 0 16 16">
+  <path fillRule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg> {this.state.btnVal}</button>
 	<img id="idOfImgElement" width="130" height="130"/>
   </div>
 </form>
