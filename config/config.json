@@ -1,0 +1,29 @@
+{
+  "test": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "theLibraryDatabase",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "development": {
+    "username": "ajbfcwznmbjgtc",
+    "password": "483abca55d16f89d4159e58f4744151e810e0da46318ebb745381f3c2db4aa1b",
+    "database": "d22k9vua646m0r",
+    "host": "ec2-52-44-46-66.compute-1.amazonaws.com",
+    "dialect": "postgres",
+	"dialectOptions": {
+		"ssl": {
+			"rejectUnauthorized": false
+		}
+	}
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+	
