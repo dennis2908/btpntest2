@@ -34,7 +34,7 @@
    If mistaken then there will be notification</br>   
 4. Delete button is supposed to be working but the API delete https://simple-contact-crud.herokuapp.com/contact/{id} is error.</br>
 
-# Testing locally (Using Mocha and Chai):
+# Testing locally (Using Mocha and Chai) :
 1. Close port 3000 if used.</br>
 2. Use command prompt and direct to root folder and type :</br>
    $ npm test or $ mocha tests</br>
