@@ -278,11 +278,11 @@ class MyMain extends React.Component {
 				}).then(res => res.json())
 			  .then(
 				(result) => {
+					this.componentDidMount();
 					if(cekId)
 						this.showSuccess('Update Data Succeed');
 					else
 						this.showSuccess('Add Data Succeed');
-				  this.componentDidMount();
 	});	
 	
 	
