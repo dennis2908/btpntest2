@@ -21,7 +21,7 @@
    Your cursor will be on the filled form.</br>
    Update the Input First Name / Last Name / Age / Photo Link.</br>
    Click Edit Data Button for updating the data.</br>
-   If mistaken then there will be notification</br>   
+   If mistaken then there will be notification  
    Note </br>
    I am not using method GET https://simple-contact-crud.herokuapp.com/contact/{id} because the detail can be transfered using state<br>
 5. Delete button is supposed to be working but the API delete https://simple-contact-crud.herokuapp.com/contact/{id} is error.</br>
