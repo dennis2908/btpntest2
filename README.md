@@ -13,7 +13,7 @@
   $ npm start</br>
   Server will run on localhost:3000
 2. Input localhost:3000 on browser (Mozilla suggested).</br>
-   Press Enter to load the localhost:3000.</br>
+   Press Enter to load localhost:3000.</br>
 3. Input First Name, Last Name, Age, Photo Link.</br>
    Click Add Data Button for adding the data.</br>
    If mistaken then there will be notification.</br>
