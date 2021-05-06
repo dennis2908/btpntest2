@@ -15,15 +15,25 @@
   $ npm install</br>
   $ npm start</br>
   Server will run on localhost:3000
-2. Open Postman and import API Test BTPN.postman_collection.json from postman folder.</br>
-3. Open Collection API Test BTPN.</br>
-4. Click API POST Login and click send.</br>
-   It will generate and response a bearer Token.</br> 
-   Use it for another request by putting the bearer token to Authorization</br>
+2. Open localhost:3000 on browser (Mozilla suggested)</br>
+3. Input First Name, Last Name, Age, Photo Link.</br>
+   Click Add Data Button for adding the data.</br>
+   If mistaken then there will be notification.</br>
+4. Choose The data and click Edit.</br>
+   Your cursor will be on the filled form.</br>
+   Update the Input First Name / Last Name / Age / Photo Link.</br>
+   Click Edit Data Button for updating the data.</br>
+   If mistaken then there will be notification</br>   
+5. Delete button is supposed to be working but the API delete https://simple-contact-crud.herokuapp.com/contact/{id} is error.</br>
    
-# Running server online (https://michaeldennis.herokuapp.com) :
-1. Open Postman and import API michaeldennis.herokuapp.com.postman_collection.json from postman folder.</br>
-2. Open Collection API michaeldennis.herokuapp.com.</br>
-3. Click API POST Login and click send.</br>
-   It will generate and response a bearer Token.</br> 
-   Use it for another request by putting the bearer token to Authorization</br>   
+# Running server online (https://michaeldennism.herokuapp.com or michaeldennism.herokuapp.com) :
+1. Open https://michaeldennism.herokuapp.com or michaeldennism.herokuapp.com on browser (Mozilla suggested)</br>
+2. Input First Name, Last Name, Age, Photo Link.</br>
+   Click Add Data Button for adding the data.</br>
+   If mistaken then there will be notification.</br>
+3. Choose The data and click Edit.</br>
+   Your cursor will be on the filled form.</br>
+   Update the Input First Name / Last Name / Age / Photo Link.</br>
+   Click Edit Data Button for updating the data.</br>
+   If mistaken then there will be notification</br>   
+4. Delete button is supposed to be working but the API delete https://simple-contact-crud.herokuapp.com/contact/{id} is error.</br>
