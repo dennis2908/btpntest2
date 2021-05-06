@@ -26,7 +26,7 @@
    
 # Running server online (https://michaeldennism.herokuapp.com or michaeldennism.herokuapp.com) :
 1. Input https://michaeldennism.herokuapp.com or michaeldennism.herokuapp.com on browser (Mozilla suggested).</br>
-   Press Enter to load the browser.</br> 
+   Press Enter to load https://michaeldennism.herokuapp.com or michaeldennism.herokuapp.com.</br> 
 2. Input First Name, Last Name, Age, Photo Link.</br>
    Click Add Data Button for adding the data.</br>
    If mistaken then there will be notification.</br>
