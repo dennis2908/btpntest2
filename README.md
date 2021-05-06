@@ -40,4 +40,4 @@
 1. Close port 3000 if used.</br>
 2. Use command prompt and direct to root folder and type :</br>
    $ npm test or $ mocha tests</br>
-   For view the test module, see folder tests./
+   (To view the test module, see folder tests)./
